@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PureVeda Shop</title>
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <meta name="description" content="PureVeda Shop is a E-Commerce site for shopping Ayurveda and Herbal Products" />
+    <meta name="keywords" content="PureVeda, shopping, E-Commerce, Buy" />
+    <meta name="author" content="D. Gopilingam" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="ShopHomeStyle.css" type="text/css" />
+
+<body class="pointer-event" id="top-page">
+    <header>
+        <!-- Header content -->
+        <div class="header-content">
+            <h3 class="animated-sentence">Welcome to PureVeda Online Shop..!</h3>
+            <div class="search-box">
+                <input type="search" id="search" name="search" placeholder="Search a Brand or Product" />
+                <a href="#">
+                    <img class="search-icon" src="images/search.svg" alt="Search Icon" />
+                </a>
+            </div>
+        </div>
+
+        <!-- Menu Items content -->
+        <div class="navbar-content">
+            <img class="logo-icon" src="images/logo.svg" alt="Logo Icon" />
+            <nav class="navbar">
+                <a href="ShopHome.html">Home</a>
+                <a href="#about-us">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact-us">Contact Us</a>
+                <button id="buttonlogin" class="button-login">Login</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <!-- Baground carousel -->
+        <div class="carousel-container">
+            <img id="slide" src="images/home1.jpg">
+            <div class="button-container">
+                <input type="radio" class="img-button" name="carousel">
+                <input type="radio" class="img-button" name="carousel">
+                <input type="radio" class="img-button" name="carousel">
+                <input type="radio" class="img-button" name="carousel">
+                <input type="radio" class="img-button" name="carousel">
+            </div>
+        </div>
+
+        <!-- Login Form -->
+        <div class="wrapper wrapper-hide">
+            <div class="toy-animate">
+                <img class="toy-animate-image" src="images/eye open.svg" />
+            </div>
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box-login">
+                <p id="login-para">Login</p>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" id="email-input" class="login-label" name="email" required
+                            autocomplete="off" />
+                        <label for="email-input" class="log-label">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" id="password-input" class="login-label animate-image" name="password"
+                            required />
+                        <label for="password-input" class="log-label">Password</label>
+                    </div>
+                    <div class="remember-forgetpass">
+                        <input type="checkbox" id="remember-checkbox" name="checkbox" />
+                        <label id="remember">Remember me</label>
+                        <a href="#">Forget Password</a>
+                    </div>
+                    <button type="submit" class="login-form-button">Login</button>
+                    <div class="login-register">
+                        <p id="account-confirm">Don't have an account?
+                            <a href="#" class="register-link">Register</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Register Form -->
+        <div class="regwrapper">
+            <span class="reg-icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box-register">
+                <p id="register-para">Register</p>
+                <form action="#">
+
+                    <div class="first-row">
+                        <div class="input-box">
+                            <label for="fname-input">First Name</label>
+                            <input type="text" id="fname-input" class="reg-label" name="firstname" required
+                                autocomplete="off" />
+                            <span class="icon">
+                                <ion-icon name="person-circle"></ion-icon>
+                            </span>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="lname-input">Last Name</label>
+                            <input type="text" id="lname-input" class="reg-label" name="lastname" required
+                                autocomplete="off" />
+                            <span class="icon">
+                                <ion-icon name="person-circle"></ion-icon>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="second-row">
+                        <div class="input-box">
+                            <label for="email-input">Email</label>
+                            <input type="email" id="email-input" class="reg-label" name="email" required
+                                autocomplete="off" />
+                            <span class="icon">
+                                <ion-icon name="mail"></ion-icon>
+                            </span>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="pass-input">Password</label>
+                            <input type="password" id="pass-input" class="reg-label" name="password" required
+                                autocomplete="off" />
+                            <span class="icon">
+                                <ion-icon name="lock-closed"></ion-icon>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="third-row">
+                        <div class="input-box">
+                            <label for="userid-input">User-Id</label>
+                            <input type="text" id="userid-input" class="reg-label" name="userid" required
+                                autocomplete="off" />
+                            <span class="icon">
+                                <ion-icon name="person"></ion-icon>
+                            </span>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="phone-input">Phone Number</label>
+                            <input type="tel" id="phone-input" class="reg-label" name="phonenumber" required
+                                autocomplete="off" />
+                            <span class="icon">
+                                <ion-icon name="call"></ion-icon>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="accept-condition">
+                        <input type="checkbox" id="condition-input" name="checkbox" />
+                        <label>I Agree the Terms and Conditions</label>
+                    </div>
+
+                    <button type="submit" class="reg-form-button">Register</button>
+
+                    <div class="register-login">
+                        <p id="account-confirm">Already have an account?
+                            <a href="#" class="login-link">Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Products Category-->
+        <div class="category-wrapper">
+            <p>CATEGORY</p>
+            <div class="card-section">
+                <div class="cat-card">
+                    <img src="images/homeo.jpg" alt="Homeo">
+                    <p>HOMEO</p>
+                </div>
+                <div class="cat-card">
+                    <img src="images/siddha.jpg" alt="Siddha">
+                    <p>SIDDHA</p>
+                </div>
+                <div class="cat-card">
+                    <img src="images/organic.jpg" alt="Organic">
+                    <p>ORGANIC</p>
+                </div>
+                <div class="cat-card">
+                    <img src="images/cosmetics.jpg" alt="Cosmetics">
+                    <p>COSMETICS</p>
+                </div>
+                <div class="cat-card">
+                    <img src="images/unani.jpg" alt="Unani">
+                    <p>UNANI</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Products Brands-->
+        <div class="brand-wrapper">
+            <p>BRAND</p>
+            <div class="sub-wrapper">
+                <div class="circle-section">
+                    <div class="brand-circle">
+                        <img src="images/dabur.png" alt="Dabur">
+                    </div>
+                    <p>DABUR</p>
+                </div>
+
+                <div class="circle-section">
+                    <div class="brand-circle">
+                        <img src="images/khadi.png" alt="Khadi">
+                    </div>
+                    <p>KHADI</p>
+                </div>
+
+                <div class="circle-section">
+                    <div class="brand-circle">
+                        <img src="images/himalaya.png" alt="Himalaya">
+                    </div>
+                    <p>HIMALAYA</p>
+                </div>
+
+                <div class="circle-section">
+                    <div class="brand-circle">
+                        <img src="images/vicco.png" alt="Vicco">
+                    </div>
+                    <p>VICCO</p>
+                </div>
+
+                <div class="circle-section">
+                    <div class="brand-circle">
+                        <img src="images/patanjali.png" alt="Patanjali">
+                    </div>
+                    <p>PATANJALI</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Banner Section-->
+        <div class="banner-wrapper">
+            <img src="images/homebanner.jpg" alt="HomeBanner">
+        </div>
+
+        <!--Featured Products-->
+        <div class="feature-product-wrapper">
+            <p>FEATURED PRODUCTS</p>
+            <div class="tot-products">
+                <div class="fea-product-container">
+                    <div class="fea-image-container">
+                        <img src="images/ashwagandha.jpg" alt="Product">
+                        <p>ASHWAGANDHA</p>
+                    </div>
+                    <p id="fea-pro-description">Discover the natural way to manage stress and boost your well-being with
+                        our
+                        Organic Ashwagandha
+                        Capsules..
+                    </p>
+                    <div class="price-cart">
+                        <p id="price-value">Price: &#8377;199</p>
+                        <div class="cart-box">
+                            <p>Add To Cart</p>
+                            <img src="images/cart.svg" alt="CartSymbol" class="cart-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fea-product-container">
+                    <div class="fea-image-container">
+                        <img src="images/triphala.jpg" alt="Product">
+                        <p>TRIPHALA</p>
+                    </div>
+                    <p id="fea-pro-description">Rediscover wellness with our Pure Triphala Capsules, a revered
+                        Ayurvedic formula known for its yet powerful cleansing properties..
+                    </p>
+                    <div class="price-cart">
+                        <p id="price-value">Price: &#8377;74</p>
+                        <div class="cart-box">
+                            <p>Add To Cart</p>
+                            <img src="images/cart.svg" alt="CartSymbol" class="cart-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fea-product-container">
+                    <div class="fea-image-container">
+                        <img src="images/guduchi.jpg" alt="Product">
+                        <p>GUDUCHI</p>
+                    </div>
+                    <p id="fea-pro-description">Reconnect with nature's healing wisdom through our Organic Guduchi
+                        Capsules, a treasured herb in Ayurveda..
+                    </p>
+                    <div class="price-cart">
+                        <p id="price-value">Price: &#8377;239</p>
+                        <div class="cart-box">
+                            <p>Add To Cart</p>
+                            <img src="images/cart.svg" alt="CartSymbol" class="cart-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fea-product-container">
+                    <div class="fea-image-container">
+                        <img src="images/brahmi.jpg" alt="Product">
+                        <p>BRAHMI</p>
+                    </div>
+                    <p id="fea-pro-description">Discover the gift of mental clarity and cognitive vitality with our Pure
+                        Brahmi Extract, a cherished herb in Ayurveda..
+                    </p>
+                    <div class="price-cart">
+                        <p id="price-value">Price: &#8377;149</p>
+                        <div class="cart-box">
+                            <p>Add To Cart</p>
+                            <img src="images/cart.svg" alt="CartSymbol" class="cart-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--About Section-->
+        <div class="about-wrapper" id="about-us">
+            <p id="about-heading">ABOUT US</p>
+            <div class="all-about-box">
+                <div class="about-box">
+                    <img src="images/quotation.svg" alt="QuotationMark">
+                    <p id="question">Who Are We?</p>
+                    <p id="about-answer">At PureVeda Ayurveda, we're dedicated to bringing the time-tested wisdom of
+                        Ayurveda to your
+                        modern
+                        wellness journey. Our mission is to provide you with the purest and most authentic Ayurvedic
+                        products, carefully crafted to nurture your well-being naturally. With a deep-rooted respect for
+                        ancient traditions and a commitment to holistic health, we meticulously source and curate a
+                        range of
+                        Ayurvedic remedies, skincare, and wellness products.</p>
+                </div>
+                <div class="about-box">
+                    <img src="images/quotation.svg" alt="QuotationMark">
+                    <p id="question">OUR FOCUS</p>
+                    <p id="about-answer">Our focus is simple yet profound: to empower you on your wellness journey
+                        through the timeless
+                        wisdom
+                        of Ayurveda. At PureVeda Ayurveda, we are dedicated to providing you with the highest quality
+                        Ayurvedic products and resources, carefully curated to enhance your overall well-being. Our team
+                        of
+                        Ayurvedic experts and passionate wellness enthusiasts work tirelessly to ensure that every
+                        product
+                        we offer aligns with the principles of balance, harmony, and natural healing.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Services Section-->
+        <div class="service-wrapper" id="services">
+            <div class="head-bann-wrapper">
+                <p>SERVICES</p>
+                <img src="images/returnrefund.png" alt="ReturnRefundBanner">
+            </div>
+            <div class="all-service-box">
+                <div class="service-box">
+                    <img src="images/userquestion.svg" alt="QuotationMark">
+                    <p id="service-question">Return a Product?</p>
+                    <p id="service-answer"><b>30-Day Satisfaction Guarantee:</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We
+                        offer a 30-day satisfaction
+                        guarantee on
+                        most of our products. If you are not completely satisfied with your purchase, you can return the
+                        product within 30 days of receiving it for a full refund or exchange. Please note that some
+                        products may have specific return conditions, so be sure to check the product page for details.
+                        <br><br>
+                        <b>Unopened and Unused:</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be eligible for a return, the
+                        product must be in its original
+                        packaging,
+                        unopened, and unused. We cannot accept returns for products that have been opened or used due to
+                        health and safety regulations.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <img src="images/userquestion.svg" alt="QuotationMark">
+                    <p id="service-question">Refund a Product?</p>
+                    <p id="service-answer"><b>30-Day Satisfaction Guarantee:</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We
+                        offer a 30-day satisfaction guarantee on
+                        most of our products. If you are not entirely satisfied with your purchase, you have the option
+                        to request a refund within 30 days of receiving the product. Please note that certain products
+                        may have specific refund conditions, which will be clearly outlined on the product page.
+                        <br><br>
+                        <b>Eligibility:</b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be eligible for a refund, the product
+                        must be in its original packaging,
+                        unopened, and unused. For health and safety reasons, we cannot accept returns for products that
+                        have been opened or used.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact Section-->
+        <div class="contact-wrapper" id="contact-us">
+            <p id="contact-title">CONTACT US</p>
+            <div class="all-contact-box">
+                <div class="contact">
+                    <img src="images/contactbaground.jpg" alt="ContactBaground">
+                    <div class="contact-content">
+                        <p>Pureveda Shop, Singapore </p>
+                        <p>(Registered Office)</p>
+                        <p>77, HIGH STREET,</p>
+                        <p>#09-11, HIGH STREET,</p>
+                        <p>SINGAPORE - 179433</p>
+                        <p>Email: gopilingam2018@gmail.com</p>
+                        <p class="contact-heading">SINGAPORE</p>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <img src="images/contactbaground.jpg" alt="ContactBaground">
+                    <div class="contact-content">
+                        <p>Pureveda Shop, India</p>
+                        <p>(Registered Office)</p>
+                        <p>Salpuria, 5th Main, Sector 7,</p>
+                        <p>Bengaluru (Bangalore),</p>
+                        <p>India - 560102</p>
+                        <p>Email: gopilingam2018@gmail.com</p>
+                        <p class="contact-heading">INDIA</p>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <img src="images/contactbaground.jpg" alt="ContactBaground">
+                    <div class="contact-content">
+                        <p>Pureveda Shop, USA</p>
+                        <p>(Registered Office)</p>
+                        <p>16192 Coastal Highway,</p>
+                        <p>Lewes, Delaware 19958,</p>
+                        <p>County of Sussex, USA</p>
+                        <p>Email: gopilingam2018@gmail.com</p>
+                        <p class="contact-heading">USA</p>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <img src="images/contactbaground.jpg" alt="ContactBaground">
+                    <div class="contact-content">
+                        <p>Pureveda Shop, Japan</p>
+                        <p>1-3-6,
+                            Hamacho,</p>
+                        <p>Nihombashi,
+                            Chuo-ku,</p>
+                        <p>Tokyo,</p>
+                        <p>103-0007, Japan</p>
+                        <p>Email: gopilingam2018@gmail.com</p>
+                        <p class="contact-heading">Japan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Rounded Up Arrow Scroll-->
+        <div class="up-arrow">
+            <a href="#top-page">
+                <img src="images/uparrow.png" alt="UpArrow" id="arrow-image">
+            </a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>&copy; Copyright 2023 PureVeda, Inc.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
+            <p>All Rights Reserved&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="social-media">
+            <a href="whatsapp://+6384299174">
+                <img src="images/whatsapp.svg" alt="Whatsapp">
+            </a>
+            <a href="https://www.facebook.com/Gopilingam D">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/gopilingam46/">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/LingaD40436284">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+        </div>
+    </footer>
+
+    <script src="ShopHomeScript.js" type="text/javascript"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
